@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+
+<body>
+    <div class="navbar navbar-expand navbar-dark bg-dark">
+        <a href="/" class="navbar-brand">Typing Master</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" style="margin-top: 3px;"><a href="/profile">Profile</a></li>
+                <li class="nav-item" style="margin-top: 3px;"><a href="/signout">Sign Out</a></li>
+                <li class="navbar-item" style="background-color: whitesmoke;padding: 3 3 3 3;margin-left: auto;">
+                    {{ name }}</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <div style="margin-top: 250px; margin-left: 650px;text-align: center;width: 800px;">
+        <div style="position: static;margin-left: 250px;">
+            <table class="sansserif">
+                <tr>
+                    <td>Right</td>
+                    <td>{{ right }}</td>
+                </tr>
+                <tr>
+                    <td>Wrong</td>
+                    <td>{{wrong}}</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>{{total}}</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div style="position: absolute;margin-left: auto;">
+            <h1 class="sansserif" style="margin-right: 300px;">
+                Congratulation!!<br>
+                You had done {{right}} words in {{interval}} seconds.
+            </h1>
+        </div>
+    </div>
+</body>
+
+</html>

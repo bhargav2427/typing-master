@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Typing Master</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+
+<body>
+    <div class="navbar navbar-expand navbar-dark bg-dark">
+        <a href="/" class="navbar-brand">Typing Master</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" style="margin-top: 3px;"><a href="/profile">Profile</a></li>
+                <li class="nav-item" style="margin-top: 3px;"><a href="/signout">Sign Out</a></li>
+                <li class="navbar-item" style="background-color: whitesmoke;padding: 3 3 3 3;">{{ name }}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="margin-top:230px;margin-right: 40px;">
+        <h1 class="sansserif" style="text-align: center;font-size: 2.5vw;">Typing Master</h1>
+        <p class="sansserif" style="text-align: center;font-size: 2vw;">{{word}}</p>
+        <div style="text-align:center;margin:0 auto;">
+            <div style="text-align:center;">
+                <form action="/words" method="POST" enctype="multipart/form-data">
+                    <input class="sansserif" style="margin: 0 0 0 0;height: 30px;width: 300px;padding: 0 0 0 0;"
+                        name="word" id="word" type="text" autofocus required autocomplete="off"><br />
+                    <input type="submit" style="height: 0px; width: 0px; border: none; padding: 0px;"
+                        hidefocus="true" />
+                </form>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <form action="/reasult">
+                <button class="button sansserif" type="submit">Result</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
