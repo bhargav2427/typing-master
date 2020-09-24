@@ -7,3 +7,4 @@
 - On result page you can see right words wrongs words and time taken.
 - After login session is created and user will access urls till sign out.
 - When User entered rong email or password or try to sign up with already registered email he will get an error.
+- When User Login the session of user will be created after that only user will able to access.
