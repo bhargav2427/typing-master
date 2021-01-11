@@ -1,7 +1,8 @@
 # typing-master
 
 - It is displaying random English words on home page.
-- It has login and signup database stored in mysql server.
+- On click with forget password user will get a mail of password.
+- It has login and signup database stored in MySQL server.
 - You will receive an email on registerd email for your password.
 - You cannot create multiple accout with a single email id.
 - On result page you can see right words wrongs words and time taken.
